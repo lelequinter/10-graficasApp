@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GraficasService } from '../../services/graficas.service';
 
 @Component({
   selector: 'app-dona-http',
@@ -8,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DonaHttpComponent implements OnInit {
 
-  constructor() { }
+  constructor(private graficaSvc: GraficasService) { }
 
   ngOnInit(): void {
+    this.graficaSvc.getUsersRedesSociales().subscribe(data => {
+      console.log(data);
+    });
   }
 
 }
