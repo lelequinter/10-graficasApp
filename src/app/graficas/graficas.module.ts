@@ -22,6 +22,7 @@ import { GraficaBarraComponent } from './components/grafica-barra/grafica-barra.
   imports: [
     CommonModule,
     GraficasRoutingModule,
+    NgChartsModule
   ],
 })
 export class GraficasModule { }
