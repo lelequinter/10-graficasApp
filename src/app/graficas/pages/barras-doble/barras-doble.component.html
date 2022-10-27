@@ -2,9 +2,16 @@
 <hr />
 <div class="row">
   <div class="col-md-6">
-    <app-grafica-barra></app-grafica-barra>
+    <app-grafica-barra
+      [horizontal]="true"
+      [chartData]="productoData"
+      [labels]="proveedoresLabels"
+      ></app-grafica-barra>
   </div>
   <div class="col-md-6">
-    <app-grafica-barra></app-grafica-barra>
+    <app-grafica-barra
+      [chartData]="proveedoresData"
+      [labels]="proveedoresLabels"
+      ></app-grafica-barra>
   </div>
 </div>
